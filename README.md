@@ -67,7 +67,12 @@ docker run --rm -p 8080:8080 pgbi/kong-dashboard start \
 
 # See full list of start options
 docker run --rm -p 8080:8080 pgbi/kong-dashboard start --help
+
+# 后台启动
+docker run -itd -p 8888:8080 pgbi/kong-dashboard start --kong-url http://10.1.108.119:8001
+
 ```
+
 
 ## Use
 
